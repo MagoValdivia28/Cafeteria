@@ -1,20 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import Home from "./src/screens/Home";
+import Categoria from "./src/screens/Categoria";
+import SobreMim from "./src/screens/SobreMim";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 export default function App() {
+  const Stack = createNativeStackNavigator();
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+      <Stack.Screen name="Home" component={Home} options={
+          {
+            title: 'Cafeteria do Felps',
+            headerStyle: {
+              backgroundColor: '#964b00',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+
+            },
+            headerTitleAlign: 'center',
+          }
+        } />
+        <Stack.Screen name="Categoria" component={Categoria} />
+        <Stack.Screen name="SobreMim" component={SobreMim} />
+      </Stack.Navigator>
+      <StatusBar />
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

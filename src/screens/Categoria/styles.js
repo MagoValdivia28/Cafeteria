@@ -1,0 +1,19 @@
+import { StyleSheet } from "react-native";
+
+const Styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: "#F5FCFF",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    navButton: {
+        marginTop: 20,
+        padding: 10,
+        backgroundColor: "lightgray",
+        color:"black",
+        borderRadius: 5,
+    },
+})
+
+export default Styles;
