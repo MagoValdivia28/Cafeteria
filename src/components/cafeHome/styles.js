@@ -2,11 +2,15 @@ import { StyleSheet } from "react-native";
 
 const Styles = StyleSheet.create({
     container: {
+    
         alignItems: "center",
     },
     image:{
-        borderRadius:20
-    }
+        borderRadius:20,
+        margin: 15
+    },
+
+    
 
 })
 

@@ -2,18 +2,21 @@ import { StyleSheet } from "react-native";
 
 const Styles = StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: "#F5FCFF",
-        justifyContent: "center",
-        alignItems: "center",
+  
+        backgroundColor: "#e6a667",        
+        flex:1,
+        
     },
-    navButton: {
-        marginTop: 20,
-        padding: 10,
-        backgroundColor: "lightgray",
-        color:"black",
-        borderRadius: 5,
+    cafe:{
+        padding:3
     },
+    text:{
+        fontSize: 26,
+        textAlign: "center",
+        padding:15,
+        color:"#733a01"
+    }
+
 })
 
 export default Styles;
